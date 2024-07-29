@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/images/work\ space.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width:75%;
+    height:75%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 90px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 25px;
+    font-weight: 750;
+    margin: 0 auto 30px;
+    color: #3c00a0;
+    position: relative;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.form-box h1::after{
+    content: "";
+    background-color: #3c00a0;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+input{
+    width: 100%;
+    background: #d1d0d05b;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+}
+
+button{
+    width: 100%;
+    background: #3c00a0;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* transition: background 0.5s; */
+}
+
+button:hover{
+    background: #270164;
+}
+
+.input-group{
+    background: #fff;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+}
+
+.toast {
+    visibility: hidden; 
+    min-width: 450px; 
+    background: #270164c4;
+    color: #fff; 
+    text-align: center; 
+    padding: 30px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 17px; 
+}
+
+.toast.show {
+    visibility: visible; 
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.please-wait {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.message {
+    display: none;
+}
+
+#backbtn{
+    display: none;
+}

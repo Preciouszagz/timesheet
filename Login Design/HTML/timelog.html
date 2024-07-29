@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/timelog.css">
+    <title>Time Log Page - Time Sheet App</title>
+    <script src="https://kit.fontawesome.com/1e0773331b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Time Log Entry</h1>
+            <p class="error">Kindly provide all the necessary details!</p>
+            <form action="/">
+                <div id="toast" class="toast">
+                    <span id="toastLoader" class="loader"></span>
+                    <span id="pleaseWait" class="please-wait">Please wait...</span>
+                    <span id="toastMessage" class="message">Sorry, email address not found.</span>
+                </div>
+
+                <div class="input-group">
+
+                     <div class="select-field">
+                        <select name="clock" id="time">
+                            <option value="default">Select Clock Type</option>
+                            <option value="time">Clock In</option>
+                            <option value="time">Clock Out</option>
+                        </select>
+                     </div>
+
+                     <div class="select-field">
+                        <select name="manager-list" id="manager">
+                            <option value="default">Select Manager</option>
+                            <option value="manager">Precious Ezeagu</option>
+                            <option value="manager">Akorede Williams</option>
+                            <option value="manager">Ubongabasi Joseph</option>
+                            <option value="manager">Jeremaiah Patience</option>
+                        </select>
+                     </div>
+                     
+                     <div class="select-field">
+                        <select name="projects" id="project">
+                            <option value="default">Select Project</option>
+                            <option value="project">Web Dev</option>
+                            <option value="project">UI/UX Design</option>
+                        </select>
+                     </div>
+
+                    <div class="input-field" id="nameField">
+                        <input type="text" name="task-num" id="task-num" placeholder="Story Task Number">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="description" id="description" placeholder="Add description">
+                    </div>
+
+                    <div class="btn-field">
+                        <button type="button" id="timelogBtn">Submit</button>
+                    </div>
+
+                    <div class="btn-field">
+                       <button type="button" id="backbtn">Back to dashboard</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/timelog.js" ></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/update.css">
+    <title>Manager Authorization Update Page - Time Sheet App</title>
+    <script src="https://kit.fontawesome.com/1e0773331b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Authorization Update</h1>
+            <form action="/">
+                <div class="input-group">
+                    <p class="error">Kindly provide all the necessary details!</p>
+                    <div id="toast" class="toast">
+                        <span id="toastLoader" class="loader"></span>
+                        <span id="pleaseWait" class="please-wait">Please wait...</span>
+                        <span id="toastMessage" class="message">Sorry, email address not found.</span>
+                    </div>
+                    <div class="input-field">
+                        <select name="manager-list" id="manager">
+                            <option value="default">Select Manager</option>
+                            <option value="Precious Ezeagu">Precious Ezeagu</option>
+                            <option value="Ubongabasi Joseph">Ubongabasi Joseph</option>
+                            <option value="Audrey Jeremiah">Audrey Jeremiah</option>
+                            <option value="Akorede Williams">Akorede Williams</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="passcode" id="passcode" placeholder="Enter admin code">
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                <button type="button" id="updatebtn">Update</button>
+                <div class="btn-field">
+                    <a href="/HTML/admin.html"><button type="button" id="backbtn">Back to dashboard</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/JS/update.js"></script>
+</body>
+</html>
